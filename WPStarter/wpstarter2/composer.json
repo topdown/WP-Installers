@@ -1,0 +1,24 @@
+{
+    "name": "gmazzap/wpstarter-simple-example",
+    "description": "Example project for WordPress + Composer + WP Starter",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wecodemore/wpstarter": "~2.0",
+        "wpackagist-plugin/wp-super-cache": "*"
+    },
+    "config": {
+        "vendor-dir": "wp-content/vendor"
+    },
+    "scripts": {
+        "post-install-cmd": "WCM\\WPStarter\\Setup::run"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp"
+    }
+}
